@@ -469,7 +469,7 @@ func sendOTPEmail(email, otp string) error {
 	htmlBody := tpl.String()
 
 	// Compose the email message
-	fromAddress := "Ready Foods  <no-reply@example.com>"
+	fromAddress := "Email Verification  <no-reply@example.com>"
 	toAddress := email
 	subject := "Your OTP for sign-in"
 	contentType := "text/html; charset=UTF-8"
